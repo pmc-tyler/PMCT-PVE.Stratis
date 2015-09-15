@@ -20,59 +20,59 @@ switch (playerSide) do {
 //-------------------------teamleader
     if (typeOf player == "B_Soldier_TL_F") then
         {
-            null = [] execVM "scripts\loadouts\BLUFOR\OCP\teamLead.sqf";
+            [] call PMCT_fnc_Load_B_TeamLead;
         };
 //-------------------------AT
 	if (typeOf player == "B_Soldier_LAT_F") then
 		{
-			null = [] execVM "scripts\loadouts\BLUFOR\OCP\LAT.sqf";
+			[] call PMCT_fnc_Load_B_LAT;
 		};
 //-------------------------medic
     if (typeOf player == "B_medic_F") then
         {
-            null = [] execVM "scripts\loadouts\BLUFOR\OCP\medic.sqf";
+            [] call PMCT_fnc_Load_B_Medic;
         };
 
 //-------------------------explo_spec
     if (typeOf player == "B_Soldier_exp_F") then
         {
-            null = [] execVM "scripts\loadouts\BLUFOR\OCP\explo_spec.sqf";
+            [] call PMCT_fnc_Load_B_Explosive;
         };
            
 //-------------------------rifleman
     if (typeOf player == "B_Soldier_F") then
         {
-            null = [] execVM "scripts\loadouts\BLUFOR\OCP\rifleman.sqf";
+            [] call PMCT_fnc_Load_B_Rifleman
         };
                   
 //-------------------------grenadier
     if (typeOf player == "B_Soldier_GL_F") then
         {
-            null = [] execVM "scripts\loadouts\BLUFOR\OCP\grenadier.sqf";
+            [] call PMCT_fnc_Load_B_Grenadier;
         };
 
             
 //-------------------------autorifleman
     if (typeOf player == "B_soldier_AR_F") then
         {
-            null = [] execVM "scripts\loadouts\BLUFOR\OCP\autorifleman.sqf";
+            [] call PMCT_fnc_Load_B_Autorifle;
         };
 
             
 //-------------------------pilot
     if (typeOf player == "B_pilot_F") then
         {
-            null = [] execVM "scripts\loadouts\BLUFOR\pilot.sqf";
+            [] call PMCT_fnc_Load_B_Pilot;
         };
             
 //-------------------------heli pilot
     if (typeOf player == "B_helipilot_F") then
         {
-        null = [] execVM "scripts\loadouts\BLUFOR\OCP\heli_pilot.sqf";
+			[] call PMCT_fnc_Load_B_Heli_pilot;
         };        
 	if (typeOf player == "B_officer_F") then
         {
-        null = [] execVM "scripts\loadouts\BLUFOR\OCP\officer.sqf";
+			[] call PMCT_fnc_Load_B_Officer;
         };      		
     };
 //---------------------------------------------------------------------------------------------------- OPFOR
