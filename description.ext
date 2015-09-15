@@ -1,0 +1,18 @@
+disabledAI = true;
+respawn = BASE;
+respawndelay = 25;
+author = "PMC-Tyler";
+OnLoadName = "Stratis Ops";
+OnLoadMission = "Perform Team Operations on Stratis";
+debriefing = 0;
+class Header
+{
+gameType = Coop;
+minPlayers = 1;
+maxPlayers = 60;
+};
+
+class CfgFunctions
+{
+#include "scripts\PMCT_Functions.hpp"
+};
