@@ -2515,7 +2515,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=105;
+		items=111;
 		class Item0
 		{
 			position[]={2176.9619,5.1724048,5813.7871};
@@ -3658,6 +3658,72 @@ class Mission
 			vehicle="Box_NATO_Support_F";
 			skill=0.60000002;
 			init="this allowDamage false; [this,9] call PMCT_fnc_cargoLoad;";
+		};
+		class Item105
+		{
+			position[]={2090.9834,5.5,5789.0918};
+			azimut=9.9920797;
+			offsetY=0.000227928;
+			id=184;
+			side="EMPTY";
+			vehicle="Box_NATO_Support_F";
+			skill=0.60000002;
+			init="this allowDamage false; [this,10] call PMCT_fnc_cargoLoad;";
+		};
+		class Item106
+		{
+			position[]={2090.7131,5.5,5787.6064};
+			azimut=9.9920797;
+			offsetY=0.000227928;
+			id=185;
+			side="EMPTY";
+			vehicle="Box_NATO_Support_F";
+			skill=0.60000002;
+			init="this allowDamage false; [this,10] call PMCT_fnc_cargoLoad;";
+		};
+		class Item107
+		{
+			position[]={2093.0081,5.5,5788.7671};
+			azimut=9.9920797;
+			offsetY=0.000227928;
+			id=186;
+			side="EMPTY";
+			vehicle="Box_NATO_Support_F";
+			skill=0.60000002;
+			init="this allowDamage false; [this,10] call PMCT_fnc_cargoLoad;";
+		};
+		class Item108
+		{
+			position[]={2092.7649,5.5,5787.3359};
+			azimut=9.9920797;
+			offsetY=0.000227928;
+			id=187;
+			side="EMPTY";
+			vehicle="Box_NATO_Support_F";
+			skill=0.60000002;
+			init="this allowDamage false; [this,10] call PMCT_fnc_cargoLoad;";
+		};
+		class Item109
+		{
+			position[]={2094.7361,5.5,5786.9312};
+			azimut=9.9920797;
+			offsetY=0.000227928;
+			id=188;
+			side="EMPTY";
+			vehicle="Box_NATO_Support_F";
+			skill=0.60000002;
+			init="this allowDamage false; [this,10] call PMCT_fnc_cargoLoad;";
+		};
+		class Item110
+		{
+			position[]={2095.0063,5.5,5788.3623};
+			azimut=9.9920797;
+			offsetY=0.000227928;
+			id=189;
+			side="EMPTY";
+			vehicle="Box_NATO_Support_F";
+			skill=0.60000002;
+			init="this allowDamage false; [this,10] call PMCT_fnc_cargoLoad;";
 		};
 	};
 	class Markers
