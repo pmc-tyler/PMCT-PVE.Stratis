@@ -60,7 +60,4 @@ for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShellRed";};
 _unit addItemToVest "CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "CUP_200Rnd_TE4_Red_Tracer_556x45_M249";};
 
-
-
-
 _unit setSpeaker "ACE_NoVoice";

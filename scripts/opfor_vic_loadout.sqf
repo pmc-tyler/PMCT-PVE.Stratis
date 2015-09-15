@@ -42,8 +42,7 @@ switch (_loadout) do
 	case 2:
 	{
 	//Medical Loadout
-	_vic addItemCargoGlobal ["ACE_fieldDressing", 50];
-	_vic addItemCargoGlobal ["ACE_morphine", 25];
+	_vic addItemCargoGlobal ["ACE_morphine", 30];
 	_vic addItemCargoGlobal ["ACE_epinephrine", 20];
 	_vic addItemCargoGlobal ["ACE_bodyBag", 20];
 	_vic addItemCargoGlobal ["ToolKit", 3];
@@ -57,17 +56,20 @@ switch (_loadout) do
 	_vic addItemCargoGlobal ["ACE_salineIV", 10];
 	_vic addItemCargoGlobal ["ACE_salineIV_500", 15];
 	_vic addItemCargoGlobal ["ACE_salineIV_250", 20];
-	_vic addItemCargoGlobal ["ACE_elasticBandage", 15];
-	_vic addItemCargoGlobal ["ACE_tourniquet", 3];
-	_vic addItemCargoGlobal ["ACE_packingBandage", 20];
-	_vic addItemCargoGlobal ["ACE_quikclot", 20];
-	_vic addItemCargoGlobal ["ACE_personalAidKit", 3];
-	_vic addItemCargoGlobal ["ACE_surgicalKit", 2];
-	_vic addItemCargoGlobal ["ACE_atropine", 10];
+	_vic addItemCargoGlobal ["ACE_elasticBandage", 30];
+	_vic addItemCargoGlobal ["ACE_tourniquet", 5];
+	_vic addItemCargoGlobal ["ACE_packingBandage", 30];
+	_vic addItemCargoGlobal ["ACE_quikclot", 30];
+	_vic addItemCargoGlobal ["ACE_personalAidKit", 5];
+	_vic addItemCargoGlobal ["ACE_surgicalKit", 5];
+	_vic addItemCargoGlobal ["ACE_atropine", 20];
 	
 	
+	} else {
+	_vic addItemCargoGlobal ["ACE_fieldDressing", 50];
+
 	};
-	
+
 	};
 	case 3:
 	{

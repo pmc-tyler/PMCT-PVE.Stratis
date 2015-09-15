@@ -37,8 +37,12 @@ _unit addItemToUniform "ACE_DefusalKit";
 _unit addItemToVest "ACE_EarPlugs";
 _unit addItemToVest "FHQ_optic_AIM";
 _unit addItemToVest "ACE_microDAGR";
-_unit addItemToVest "ACE_MapTools";
-
+_unit addItemToVest "ALiVE_Tablet";
+_unit addItemToVest "CUP_30Rnd_545x39_AK_M";
+//add weapons
+_unit addWeapon "CUP_arifle_AK107_GL";
+_unit addPrimaryWeaponItem "acc_pointer_IR";
+_unit addPrimaryWeaponItem "optic_Hamr";
 //add medical supplies
 if (ace_medical_level == 1) then {
 for "_i" from 1 to 8 do {_unit addItemToUniform "ACE_fieldDressing";};
@@ -51,18 +55,14 @@ for "_i" from 1 to 10 do {_unit addItemToBackpack "ACE_quikclot";};
 for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_elasticBandage";};
 for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_packingBandage";};
 };
+
 //add ammo
 for "_i" from 1 to 2 do {_unit addItemToUniform "HandGrenade";};
 for "_i" from 1 to 3 do {_unit addItemToUniform "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShellRed";};
-for "_i" from 1 to 10 do {_unit addItemToVest "CUP_30Rnd_545x39_AK_M";};
+for "_i" from 1 to 9 do {_unit addItemToVest "CUP_30Rnd_545x39_AK_M";};
 for "_i" from 1 to 7 do {_unit addItemToVest "1Rnd_HE_Grenade_shell";};
 for "_i" from 1 to 3 do {_unit addItemToVest "1Rnd_Smoke_Grenade_shell";};
 for "_i" from 1 to 2 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 
-
-//add weapons
-_unit addWeapon "CUP_arifle_AK107_GL";
-_unit addPrimaryWeaponItem "acc_pointer_IR";
-_unit addPrimaryWeaponItem "optic_Hamr";
-
+_unit setSpeaker "ACE_NoVoice";

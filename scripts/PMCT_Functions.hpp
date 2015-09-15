@@ -14,12 +14,27 @@ class PMCT
 			class Load_B_Rifleman {file = "scripts\loadouts\BLUFOR\OCP\rifleman.sqf";};
 			class Load_B_TeamLead {file = "scripts\loadouts\BLUFOR\OCP\teamLead.sqf";};
 			
+			
+			
+			class Load_O_Pilot {file = "scripts\loadouts\OPFOR\pilot.sqf";};
+			class Load_O_Autorifle {file = "scripts\loadouts\OPFOR\GRN\autorifleman.sqf";};
+			class Load_O_Explosive {file = "scripts\loadouts\OPFOR\GRN\explo_spec.sqf";};
+			class Load_O_Grenadier {file = "scripts\loadouts\OPFOR\GRN\grenadier.sqf";};
+			class Load_O_Heli_pilot {file = "scripts\loadouts\OPFOR\GRN\heli_pilot.sqf";};
+			class Load_O_LAT {file = "scripts\loadouts\OPFOR\GRN\LAT.sqf";};
+			class Load_O_Medic {file = "scripts\loadouts\OPFOR\GRN\medic.sqf";};
+			class Load_O_Officer {file = "scripts\loadouts\OPFOR\GRN\officer.sqf";};
+			class Load_O_Rifleman {file = "scripts\loadouts\OPFOR\GRN\rifleman.sqf";};
+			class Load_O_TeamLead {file = "scripts\loadouts\OPFOR\GRN\teamLead.sqf";};
+			
 		};
+
 		class cargo
 		{
 			class cargoLoad {file = "scripts\cargoLoad.sqf";};
 			class vic_loadout {file = "scripts\vic_loadout.sqf";};
 			class vic_medload {file = "scripts\vic_medload.sqf";};
+			class o_vic_loadout {file = "scripts\opfor_vic_loadout.sqf";};
 		};
 		
 	};

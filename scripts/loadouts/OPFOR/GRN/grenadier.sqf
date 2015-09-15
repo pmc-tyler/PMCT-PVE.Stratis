@@ -34,6 +34,12 @@ _unit addWeapon "Binocular";
 //add items
 _unit addItemToVest "ACE_EarPlugs";
 _unit addItemToVest "ACE_microDAGR";
+//add primary mags
+_unit addItemToVest "CUP_30Rnd_545x39_AK_M";
+//add weapons
+_unit addWeapon "CUP_arifle_AK107_GL";
+_unit addPrimaryWeaponItem "acc_pointer_IR";
+_unit addPrimaryWeaponItem "FHQ_optic_AIM";
 
 //add medical supplies
 if (ace_medical_level == 1) then {
@@ -52,13 +58,8 @@ for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_packingBandage";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "HandGrenade";};
 for "_i" from 1 to 3 do {_unit addItemToUniform "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShellRed";};
-for "_i" from 1 to 10 do {_unit addItemToVest "CUP_30Rnd_545x39_AK_M";};
+for "_i" from 1 to 9 do {_unit addItemToVest "CUP_30Rnd_545x39_AK_M";};
 for "_i" from 1 to 10 do {_unit addItemToVest "1Rnd_HE_Grenade_shell";};
 for "_i" from 1 to 10 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
-
-//add weapons
-_unit addWeapon "CUP_arifle_AK107_GL";
-_unit addPrimaryWeaponItem "acc_pointer_IR";
-
-
+_unit setSpeaker "ACE_NoVoice";

@@ -58,8 +58,4 @@ for "_i" from 1 to 3 do {_unit addItemToUniform "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShellRed";};
 for "_i" from 1 to 9 do {_unit addItemToVest "CUP_30Rnd_556x45_Stanag";};
 
-
-
-
-
 _unit setSpeaker "ACE_NoVoice";

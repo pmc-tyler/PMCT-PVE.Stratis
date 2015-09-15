@@ -10,7 +10,7 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 removeAllWeapons _unit;
-_unit setSpeaker "ACE_NoVoice";
+sleep 0.1;
 
 //add uniform
 _unit forceAddUniform "TFA_green";
@@ -36,7 +36,11 @@ _unit addItemToVest "ACE_EarPlugs";
 _unit addItemToVest "FHQ_optic_AIM";
 _unit addItemToVest "ACE_microDAGR";
 _unit addItemToBackpack "ACE_SpareBarrel";
-
+_unit addItemToVest "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
+//add weapons
+_unit addWeapon "CUP_lmg_PKM";
+_unit addPrimaryWeaponItem "acc_pointer_IR";
+_unit addPrimaryWeaponItem "optic_Hamr";
 //add medical supplies
 if (ace_medical_level == 1) then {
 for "_i" from 1 to 8 do {_unit addItemToUniform "ACE_fieldDressing";};
@@ -53,12 +57,7 @@ for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_packingBandage";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "HandGrenade";};
 for "_i" from 1 to 3 do {_unit addItemToUniform "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShellRed";};
-for "_i" from 1 to 2 do {_unit addItemToVest "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";};
+_unit addItemToVest "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";};
 
-
-//add weapons
-_unit addWeapon "CUP_lmg_PKM";
-_unit addPrimaryWeaponItem "acc_pointer_IR";
-_unit addPrimaryWeaponItem "optic_Hamr";
-
+_unit setSpeaker "ACE_NoVoice";

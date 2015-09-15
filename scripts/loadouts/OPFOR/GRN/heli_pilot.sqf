@@ -10,7 +10,7 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 removeAllWeapons _unit;
-_unit setSpeaker "ACE_NoVoice";
+sleep 0.1;
 
 //add uniform
 _unit forceAddUniform "TFA_green";
@@ -31,14 +31,14 @@ _unit addItemToVest "ACE_MapTools";
 //add binoculars
 _unit addWeapon "Binocular";
 
-//add ammo
-for "_i" from 1 to 3 do {_unit addItemToUniform "CUP_30Rnd_545x39_AK_M";};
-for "_i" from 1 to 5 do {_unit addItemToVest "CUP_30Rnd_545x39_AK_M";};
-for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
-for "_i" from 1 to 1 do {_unit addItemToVest "SmokeShellRed";};
-for "_i" from 1 to 1 do {_unit addItemToVest "SmokeShellGreen";};
-for "_i" from 1 to 1 do {_unit addItemToVest "SmokeShellYellow";};
-for "_i" from 1 to 2 do {_unit addItemToVest "16Rnd_9x21_Mag";};
+//add items
+_unit addItemToVest "ACE_EarPlugs";
+_unit addItemToVest "ACE_microDAGR";
+_unit addItemToVest "CUP_30Rnd_545x39_AK_M";
+//add weapons
+_unit addWeapon "CUP_arifle_AK107";
+_unit addPrimaryWeaponItem "acc_pointer_IR";
+_unit addPrimaryWeaponItem "FHQ_optic_AIM";
 //add medical supplies
 if (ace_medical_level == 1) then {
 for "_i" from 1 to 8 do {_unit addItemToUniform "ACE_fieldDressing";};
@@ -52,8 +52,12 @@ for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_elasticBandage";};
 for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_packingBandage";};
 };
 
-//add items
-_unit addItemToVest "ACE_EarPlugs";
-//add weapons
-_unit addWeapon "CUP_arifle_AK107";
-_unit addWeapon "hgun_P07_F";
+//add ammo
+for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShell";};
+for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShellRed";};
+for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShellGreen";};
+for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShellOrange";};
+for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShellBlue";};
+for "_i" from 1 to 9 do {_unit addItemToVest "CUP_30Rnd_545x39_AK_M";};
+
+_unit setSpeaker "ACE_NoVoice";

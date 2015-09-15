@@ -81,59 +81,59 @@ switch (playerSide) do {
 //-------------------------teamleader
     if (typeOf player == "O_Soldier_TL_F") then
         {
-            null = [] execVM "scripts\loadouts\OPFOR\GRN\teamLead.sqf";
+            [] call PMCT_fnc_Load_O_TeamLead;
         };
 //-------------------------AT
 	if (typeOf player == "O_Soldier_LAT_F") then
 		{
-			null = [] execVM "scripts\loadouts\OPFOR\GRN\LAT.sqf";
+			[] call PMCT_fnc_Load_O_LAT;
 		};
 //-------------------------medic
     if (typeOf player == "O_medic_F") then
         {
-            null = [] execVM "scripts\loadouts\OPFOR\GRN\medic.sqf";
+            [] call PMCT_fnc_Load_O_Medic;
         };
 
 //-------------------------explo_spec
     if (typeOf player == "O_Soldier_exp_F") then
         {
-            null = [] execVM "scripts\loadouts\OPFOR\GRN\explo_spec.sqf";
+           [] call PMCT_fnc_Load_O_Explosive;
         };
            
 //-------------------------rifleman
     if (typeOf player == "O_Soldier_F") then
         {
-            null = [] execVM "scripts\loadouts\OPFOR\GRN\rifleman.sqf";
+            [] call PMCT_fnc_Load_O_Rifleman;
         };
                   
 //-------------------------grenadier
     if (typeOf player == "O_Soldier_GL_F") then
         {
-            null = [] execVM "scripts\loadouts\OPFOR\GRN\grenadier.sqf";
+           [] call PMCT_fnc_Load_O_Grenadier;
         };
 
             
 //-------------------------autorifleman
     if (typeOf player == "O_soldier_AR_F") then
         {
-            null = [] execVM "scripts\loadouts\OPFOR\GRN\autorifleman.sqf";
+            [] call PMCT_fnc_Load_O_Autorifle;
         };
 
             
 //-------------------------pilot
     if (typeOf player == "O_pilot_F") then
         {
-            null = [] execVM "scripts\loadouts\OPFOR\pilot.sqf";
+            [] call PMCT_fnc_Load_O_Pilot;
         };
             
 //-------------------------heli pilot
     if (typeOf player == "O_helipilot_F") then
         {
-        null = [] execVM "scripts\loadouts\OPFOR\GRN\heli_pilot.sqf";
+        [] call PMCT_fnc_Load_O_Heli_pilot;
         };        
 	if (typeOf player == "O_officer_F") then
         {
-        null = [] execVM "scripts\loadouts\OPFOR\GRN\officer.sqf";
+		[] call PMCT_fnc_Load_O_Officer;
         }; 
     };
 //---------------------------------------------------------------------------------------------------- REBEL

@@ -66,7 +66,4 @@ for "_i" from 1 to 7 do {_unit addItemToVest "1Rnd_HE_Grenade_shell";};
 for "_i" from 1 to 3 do {_unit addItemToVest "1Rnd_Smoke_Grenade_shell";};
 for "_i" from 1 to 2 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 
-
-
-
 _unit setSpeaker "ACE_NoVoice";

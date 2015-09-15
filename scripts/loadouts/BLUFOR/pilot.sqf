@@ -50,7 +50,4 @@ _unit addItemToUniform "ACE_tourniquet";
 _unit addItemToUniform "ACE_IR_Strobe_Item";
 _unit addItemToUniform "ACE_Flashlight_XL50";
 
-
-
-
 _unit setSpeaker "ACE_NoVoice";

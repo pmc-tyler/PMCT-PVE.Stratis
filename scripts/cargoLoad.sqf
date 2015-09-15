@@ -150,6 +150,42 @@ switch (_selection) do
 				_crate addBackpackCargoGlobal ["B_UAV_01_backpack_F", 15];
 				_crate addItemCargoGlobal ["B_UavTerminal", 15];
 			};
+		case 10: //Resupply
+			{
+				_crate addMagazineCargoGlobal ["CUP_30Rnd_556x45_Stanag",30];
+				_crate addMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",15];
+				_crate addMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell",20];
+				_crate addMagazineCargoGlobal ["1Rnd_SmokeRed_Grenade_shell",5];
+				_crate addMagazineCargoGlobal ["1Rnd_SmokeGreen_Grenade_shell",5];
+				_crate addMagazineCargoGlobal ["1Rnd_SmokeYellow_Grenade_shell",5];
+				_crate addMagazineCargoGlobal ["1Rnd_SmokePurple_Grenade_shell",5];
+				_crate addMagazineCargoGlobal ["1Rnd_SmokeBlue_Grenade_shell",5];
+				_crate addMagazineCargoGlobal ["1Rnd_SmokeOrange_Grenade_shell",5];
+				_crate addItemCargoGlobal ["ACE_morphine", 15];
+				_crate addItemCargoGlobal ["ACE_epinephrine", 10];
+				_crate addItemCargoGlobal ["ACE_bodyBag", 10];
+				_crate addItemCargoGlobal ["ToolKit", 2];
+				_crate addItemCargoGlobal ["ACE_bloodIV", 5];
+				_crate addItemCargoGlobal ["ACE_bloodIV_500", 5];
+				if (ace_medical_level == 2) then {
+				
+				_crate addItemCargoGlobal ["ACE_salineIV", 5];
+				_crate addItemCargoGlobal ["ACE_salineIV_500", 5];
+				_crate addItemCargoGlobal ["ACE_salineIV_250", 10];
+				_crate addItemCargoGlobal ["ACE_elasticBandage", 30];
+				_crate addItemCargoGlobal ["ACE_tourniquet", 5];
+				_crate addItemCargoGlobal ["ACE_packingBandage", 30];
+				_crate addItemCargoGlobal ["ACE_quikclot", 30];
+				_crate addItemCargoGlobal ["ACE_personalAidKit", 3];
+				_crate addItemCargoGlobal ["ACE_surgicalKit", 2];
+				_crate addItemCargoGlobal ["ACE_atropine", 10];
+				
+				
+				} else {
+				_crate addItemCargoGlobal ["ACE_fieldDressing", 50];
+
+	};
+			};
 		
 			
 	};

@@ -62,7 +62,4 @@ for "_i" from 1 to 9 do {_unit addItemToVest "CUP_30Rnd_556x45_Stanag";};
 for "_i" from 1 to 10 do {_unit addItemToVest "1Rnd_HE_Grenade_shell";};
 for "_i" from 1 to 10 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
-
-
-
 _unit setSpeaker "ACE_NoVoice";

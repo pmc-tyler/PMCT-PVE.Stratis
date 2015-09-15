@@ -64,6 +64,4 @@ for "_i" from 1 to 9 do {_unit addItemToVest "CUP_30Rnd_556x45_Stanag";};
 _unit addItemToBackpack "SatchelCharge_Remote_Mag";
 for "_i" from 1 to 4 do {_unit addItemToBackpack "DemoCharge_Remote_Mag";};
 
-
-
 _unit setSpeaker "ACE_NoVoice";
