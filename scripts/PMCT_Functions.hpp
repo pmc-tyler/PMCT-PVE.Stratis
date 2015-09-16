@@ -1,5 +1,11 @@
 class PMCT
 	{
+		class communityScripts {
+			class igiLoad { file = "IgiLoad\IgiLoadInit.sqf";};
+		
+		
+		};
+		
 		class loadouts
 		{
 			class loadoutsExec {file = "scripts\loadouts\loadoutsExec.sqf";};
