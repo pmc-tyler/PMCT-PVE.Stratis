@@ -1,0 +1,3 @@
+[uniform, vest, headgear, backpack, goggles, radiobackpack]
+
+_camoArray = [["TFA_mcam", "TFA_PlateCarrierH_MCam", "TFA_H_HemletIA_mcam", "TFA_assault_Mcam", "T_HoodTanCLR", "TFA_511_MCAM"], ["TFA_green", "TFA_PlateCarrierH_Grn", "TFA_Mich_Green", "TFA_assault_grn", "T_HoodTanCLR", "TFA_511_GRN"]];

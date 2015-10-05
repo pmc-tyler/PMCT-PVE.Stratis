@@ -11,13 +11,14 @@ removeHeadgear _unit;
 removeGoggles _unit;
 removeAllWeapons _unit;
 sleep 0.1;
+_camo = _this select 0;
 
 //add uniform
-_unit forceAddUniform "TFA_mcam";
-_unit addVest "TFA_PlateCarrierH_MCam";
-_unit addHeadgear "TFA_H_HelmetIA_mcam";
-_unit addBackpack "TFA_511_MCAM";
-_unit addGoggles "T_HoodTanCLR";
+_unit forceAddUniform _camo select 0;;
+_unit addVest _camo select 1;
+_unit addHeadgear _camo select 2;
+_unit addBackpack _camo select 5;
+_unit addGoggles _camo select 4;
 
 //add common items
 _unit linkItem "ItemMap";

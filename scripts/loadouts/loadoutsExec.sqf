@@ -10,7 +10,7 @@ if (typeOf player == "unit_classname") then
 	};
 	
 */
-
+_camo = _this select 0;
 switch (playerSide) do {
 //---------------------------------------------------------------------------------------------------- BLUFOR
     case west: {
@@ -20,7 +20,7 @@ switch (playerSide) do {
 //-------------------------teamleader
     if (typeOf player == "B_Soldier_TL_F") then
         {
-            [] call PMCT_fnc_Load_B_TeamLead;
+            [_camo] call PMCT_fnc_Load_B_TeamLead;
         };
 //-------------------------AT
 	if (typeOf player == "B_Soldier_LAT_F") then
