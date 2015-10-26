@@ -2526,6 +2526,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Truck_01_medical_F";
 			skill=0.60000002;
+			init="[this] call PMCT_fnc_vic_clearCargo; [this, 2] call PMCT_fnc_vic_addCargo;";
 			syncId=7;
 			synchronizations[]={1};
 		};
@@ -2538,6 +2539,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Truck_01_medical_F";
 			skill=0.60000002;
+			init="[this] call PMCT_fnc_vic_clearCargo; [this, 2] call PMCT_fnc_vic_addCargo;";
 			syncId=8;
 			synchronizations[]={1};
 		};
@@ -2550,6 +2552,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Truck_01_medical_F";
 			skill=0.60000002;
+			init="[this] call PMCT_fnc_vic_clearCargo; [this, 2] call PMCT_fnc_vic_addCargo;";
 			syncId=9;
 			synchronizations[]={1};
 		};
@@ -3264,7 +3267,7 @@ class Mission
 			vehicle="RHS_UH60M_MEV2";
 			skill=0.60000002;
 			text="MED_AIR_1";
-			init="null = [this] execVM ""scripts\vic_medload.sqf"";";
+			init="[this] call PMCT_fnc_vic_clearCargo; [this, 2] call PMCT_fnc_vic_addCargo;";
 			syncId=36;
 			synchronizations[]={6};
 		};
