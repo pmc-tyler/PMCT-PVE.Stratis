@@ -14,9 +14,10 @@ clearMagazineCargoGlobal _vic;
 clearBackpackCargoGlobal _vic;
 
 [_vic, _loadout] call PMCT_fnc_vic_addCargo;
-[] spawn {
-	{_vic removeAction selectloadout1} forEach allUnits;
-	{_vic removeAction selectloadout2} forEach allUnits;
-	{_vic removeAction selectloadout3} forEach allUnits;
-	{_vic removeAction selectloadout4} forEach allUnits;
-};
+
+{
+    _vic removeAction selectloadout1;
+    _vic removeAction selectloadout2;
+    _vic removeAction selectloadout3;
+    _vic removeAction selectloadout4;
+} forEach allUnits;
