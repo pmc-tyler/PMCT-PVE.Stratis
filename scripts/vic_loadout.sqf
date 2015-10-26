@@ -1,5 +1,5 @@
 //if (isServer) exitWith {};
-private ["_loader","_loadout","_vic","_vic_type"];
+private ["_vic","_vic_type"];
 params ["_loader", "", "", "_loadout"];
 //Message if outside vehicle
 if (vehicle _loader == player) exitWith {hint "You must be in a vehicle!";};
