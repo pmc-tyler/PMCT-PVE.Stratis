@@ -1,15 +1,12 @@
 //if (isServer) exitWith {};
 private ["_loader","_loadout","_vic","_vic_type"];
-params ["_loader", "", "", "_loadout"]`
+params ["_loader", "", "", "_loadout"];
 //Message if outside vehicle
 if (vehicle _loader == player) exitWith {hint "You must be in a vehicle!";};
 
 _vic = vehicle _loader;
 _vic_type = typeOf _vic;
-clearItemCargoGlobal _vic;
-clearWeaponCargoGlobal _vic;
-clearMagazineCargoGlobal _vic;
-clearBackpackCargoGlobal _vic;
+[_vic] call PMCT_fnc_vic_clearCargo;
 
 [_vic, _loadout] call PMCT_fnc_vic_addCargo;
 

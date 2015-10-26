@@ -39,7 +39,8 @@ class PMCT
 		{
 			class cargoLoad {file = "scripts\cargoLoad.sqf";};
 			class vic_loadout {file = "scripts\vic_loadout.sqf";};
-			class vic_addCargo {file = "scripts\vic_addCargo.sqf";}
+			class vic_addCargo {file = "scripts\vic_addCargo.sqf";};
+			class vic_clearCargo {file = "scripts\vic_clearCargo.sqf";};
 			class vic_medload {file = "scripts\vic_medload.sqf";};
 			class o_vic_loadout {file = "scripts\opfor_vic_loadout.sqf";};
 		};
