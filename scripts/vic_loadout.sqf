@@ -1,11 +1,9 @@
 //if (isServer) exitWith {};
 private ["_loader","_loadout","_vic","_vic_type"];
-_loader = _this select 0;
-
+params ["_loader", "", "", "_loadout"]`
 //Message if outside vehicle
 if (vehicle _loader == player) exitWith {hint "You must be in a vehicle!";};
 
-_loadout = _this select 3;
 _vic = vehicle _loader;
 _vic_type = typeOf _vic;
 clearItemCargoGlobal _vic;

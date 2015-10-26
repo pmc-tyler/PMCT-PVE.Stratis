@@ -5,8 +5,7 @@
 	possibly just this: [this,selectionHere] call compile preprocessFileLineNumbers "scripts\cargoLoad.sqf";
 */
 
-_crate = _this select 0;
-_selection = _this select 1;
+params ["_crate", "_selection"];
 if (!isServer) exitWith {};
 
 clearItemCargoGlobal _crate;
