@@ -56,7 +56,8 @@ class Mission
 		"3DEN",
 		"CUP_Weapons_AmmoBoxes",
 		"ace_repair",
-		"ace_cargo"
+		"ace_cargo",
+		"A3_Structures_F_Training"
 	};
 	addOnsAuto[]=
 	{
@@ -112,6 +113,7 @@ class Mission
 		"aia_misc3_config",
 		"A3_Soft_F_Bootcamp_Offroad_01",
 		"a3_soft_f_offroad_01",
+		"A3_Structures_F_Training",
 		"a3_map_stratis"
 	};
 	randomSeed=22400;
@@ -2515,7 +2517,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=111;
+		items=112;
 		class Item0
 		{
 			position[]={2176.9619,5.1724048,5813.7871};
@@ -3724,6 +3726,15 @@ class Mission
 			vehicle="Box_NATO_Support_F";
 			skill=0.60000002;
 			init="this allowDamage false; [this,10] call PMCT_fnc_cargoLoad;";
+		};
+		class Item111
+		{
+			position[]={320.64676,-0.0040979995,3876.562};
+			id=190;
+			side="EMPTY";
+			vehicle="BlockConcrete_F";
+			skill=0.60000002;
+			init="if (isServer) then {this enableSimulationGlobal false};";
 		};
 	};
 	class Markers
